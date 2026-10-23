@@ -1,0 +1,9 @@
+version: 1
+project:
+  toc:
+    - title: IRSA Tutorials
+      file: index.md
+    - title: SPHEREx
+      file: notebooks/spherex/spherex.md
+    - title: Euclid
+      file: notebooks/euclid/euclid.md
