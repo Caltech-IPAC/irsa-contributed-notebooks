@@ -1,31 +1,12 @@
-# public-repo-template
+IRSA Contributed Notebooks
+==========================
 
-[https://github.com/Caltech-IPAC/public-repo-template](https://github.com/Caltech-IPAC/public-repo-template) is a template for IPAC repos that are intended to be made public.
+Notebooks contributed by the community to demonstrate IRSA use cases.
+These notebooks are not actively maintained by the IRSA team and are not regularly tested by us.
+They may not work with the most recent version of dependencies.
 
-See [Open Sourcing Software](https://confluence.ipac.caltech.edu/spaces/IPAC/pages/709038101/Open+Sourcing+Software) for complete information and instructions for creating and using public repos at IPAC.
-Basic instructions are included below.
+We do use MyST Markdown format for the notebooks, please visit [the upstream documentation](https://mystmd.org/guide/md-vs-ipynb) to learn more about the reasoning behind the choice.
 
-## Instructions for repo creators
-
-To create a repo using this template, complete the form at [https://github.com/organizations/Caltech-IPAC/repositories/new](https://github.com/organizations/Caltech-IPAC/repositories/new).
-In the **Configuration** section:
-
-- **Choose visibility**: choose "Private" for now.
-  ISG will make the repo public after it's been approved.
-- **Start with a template**: choose "Caltech-IPAC/public-repo-template".
-- **Include all branches**: choose "Off".
-
-## Instructions for repo users
-
-Repos created from the template will contain a `main` branch with a couple of files that were copied from the template.
-Description of the files and what to do with them:
-
-- `LICENSE`: A BSD 3-Clause license describing what others can and can't do with the contents of the repo.
-  This is required for legal purposes.
-  **Leave the file as-is.**
-- `README.md`: This file.
-  **Remove the original contents and add information about your repo.**
-  Be sure to include:
-  - a statement of the repo's purpose
-  - any information a new user or contributor needs to get started
-  - a point of contact for repo users and contributors to get support (e.g., email address or helpdesk link)
+However, we add it here that you can easily have the same user experience in JupyterLab if these two dependencies are installed:
+ - [jupytext library](https://pypi.org/project/jupytext/)
+ - [jupyterlab-myst JupyterLab extension](https://pypi.org/project/jupyterlab-myst/)
