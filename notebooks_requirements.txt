@@ -1,0 +1,4 @@
+# For supporting myst-markdown based notebooks
+jupytext>=1.19.4
+# Making admonotions look nice for the myst notebooks in jupyter
+jupyterlab-myst
