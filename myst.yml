@@ -3,9 +3,9 @@ version: 1
 project:
   title: IRSA Contributed Notebooks
   subject: IRSA Contributed Notebooks
-  description: IRSA Python Notebooks contributed by the community to demostrate accessing data served by the NASA/IPAC Infrared Science Archive (IRSA)
+  description: Python notebooks that demonstrate science use cases of data served by IRSA, contributed by mission scientists and others who use the data.
   keywords: [astronomy]
-  github: https://github.com/Caltech-IPAC/irsa-tutorials/
+  github: https://github.com/Caltech-IPAC/irsa-contributed-notebooks/
   copyright: California Institute of Technology
   license:
     id: BSD-3-Clause
