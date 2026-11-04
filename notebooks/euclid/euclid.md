@@ -1,13 +1,8 @@
 # Euclid Notebooks
 
-[Euclid](https://irsa.ipac.caltech.edu/Missions/euclid.html) launched in July 2023 with the primary science goals of better understanding the composition and evolution of the dark Universe.
-It carries two instruments: the VISible instrument (VIS) and the Near-Infrared Spectrometer and Photometer (NISP).
+[Euclid](https://irsa.ipac.caltech.edu/Missions/euclid.html) launched in July 2023 as a European Space Agency (ESA) mission with contributions by the National Aeronautics and Space Administration (NASA).
+The primary science goals of Euclid are to better understand the composition and evolution of the dark Universe.
+The Euclid mission will provide space-based imaging and spectroscopy as well as supporting ground-based imaging to achieve these goals.
 
-[Quick Release 1 (Q1)](https://irsa.ipac.caltech.edu/data/Euclid/docs/overview_q1.html) was released in March 2025 and consists of approximately 35 TB of imaging, spectroscopy, and catalogs, covering four non-contiguous fields totaling 63 square degrees.
-Data products include MERged mosaics of calibrated and stacked frames; combined infrared spectra (SIR); and catalogs of MER objects, photometric redshifts and classifications (PHZ), and spectroscopic redshifts and line measurements (SPE).
-
-Data products include:
-- MER (merged) mosaic images of calibrated and stacked frames;
-- SIR combined infrared spectra;
-- Catalogs of MER objects, photometric redshifts and classifications (PHZ), and spectroscopic redshifts and line measurements (SPE);
-- Merged Objects Catalog (created by IRSA) containing the MER, PHZ, and SPE catalogs in a single HATS Catalog.
+During its nominal 6-year mission, the Euclid space telescope will conduct (1) a Wide Survey resulting in imaging and spectroscopy over about 14,000 square degrees; and (2) a Deep Survey covering about 50 square degrees.
+Euclid public data releases will occur approximately annually from 2025 through 2031.
