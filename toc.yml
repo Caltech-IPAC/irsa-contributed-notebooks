@@ -1,9 +1,13 @@
 version: 1
 project:
   toc:
-    - title: IRSA Tutorials
+    # Site landing page
+    - title: IRSA Contributed Notebooks
       file: index.md
-    - title: SPHEREx
-      file: notebooks/spherex/spherex.md
+    # Euclid landing page
     - title: Euclid
       file: notebooks/euclid/euclid.md
+      # Euclid notebooks
+      children:
+        # - title: {Short title that will appear in the site navigation side bar.}
+        #   file: {path/to/notebook.md}
