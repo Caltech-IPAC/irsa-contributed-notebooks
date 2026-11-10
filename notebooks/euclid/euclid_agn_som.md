@@ -69,6 +69,7 @@ Nothing needs to be downloaded in advance.
 ```
 
 ```{code-cell} ipython3
+import sys
 import warnings
 
 import matplotlib.pyplot as plt
@@ -79,9 +80,11 @@ from astropy.table import QTable, Table, join, vstack
 from astropy.units import UnitsWarning
 from minisom import MiniSom
 
-from agn_tutorial_utils import (abmag, add_panel_colorbar, any_flag_set, as_float_array, count_map,
-                                fill_empty_cells, find_bmu, format_som_axis, jitter_bmu, median_map,
-                                overlay_density, overlay_method_excess)
+# The helper functions of this notebook are in code_src/euclid_agn_som.py.
+sys.path.append('code_src')
+from euclid_agn_som import (abmag, add_panel_colorbar, any_flag_set, as_float_array, count_map,  # noqa: E402
+                            fill_empty_cells, find_bmu, format_som_axis, jitter_bmu, median_map,
+                            overlay_density, overlay_method_excess)
 
 # The spectra in Section 10 are VOTables that write their units as 'Angstrom' and 'erg'.
 # astropy reads these units correctly but warns that the VOUnit standard prefers other spellings.
