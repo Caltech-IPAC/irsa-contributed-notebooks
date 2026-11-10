@@ -11,3 +11,5 @@ project:
       children:
         # - title: {Short title that will appear in the site navigation side bar.}
         #   file: {path/to/notebook.md}
+        - title: AGN Selections on a Color SOM
+          file: notebooks/euclid/euclid_agn_som.md
