@@ -43,7 +43,7 @@ The ground-based `griz` images come from different telescopes in each field, so 
 To keep this notebook short we use EDF-N, the field with the most AGN selection methods.
 Section 1 shows how to use the other two fields.
 
-**Data access.** The AGN candidate list is a small file (less than 1 MB) read over HTTPS.
+**Data access.** The AGN candidate list is a small file (less than 1 MB) that the notebook downloads from Google Drive.
 The DR1 catalogs are queried with IRSA's TAP service, and the spectra are read one at a time from IRSA's cloud-hosted spectrum service.
 Nothing needs to be downloaded in advance.
 
@@ -65,13 +65,14 @@ Nothing needs to be downloaded in advance.
 
 ```{code-cell} ipython3
 # Uncomment the next line to install dependencies if needed.
-# %pip install numpy==2.5.4 scipy==1.18.1 matplotlib==3.10.5 astropy==8.0.1 pyvo==1.9.1 minisom==2.3.6
+# %pip install numpy==2.5.4 scipy==1.18.1 matplotlib==3.10.5 astropy==8.0.1 pyvo==1.9.1 minisom==2.3.6 gdown==6.5.1
 ```
 
 ```{code-cell} ipython3
 import sys
 import warnings
 
+import gdown
 import matplotlib.pyplot as plt
 import numpy as np
 import pyvo
@@ -135,13 +136,22 @@ The small files were made in four steps:
 - Add the DR1 object ID of each candidate (`object_id_dr1`). All of the Q1 data were reprocessed for DR1 and the sources got new object IDs, so we matched the Q1 positions to the DR1 sources brighter than $I_E$ = 24.9 within 0.3 arcsec, and kept the candidates with a match. About 90% of the candidates of most methods have one. The exception is the random forest (PRF) selection: only about 30% of its candidates have a match, because many of them are faint in Q1 and are fainter or not detected at the same position in DR1.
 - Keep the candidates with a redshift between 1.2 and 1.9, a little wider than the range used in this notebook. The redshift is the DESI spectroscopic redshift when the AGN catalog has one, and the DR1 photometric redshift otherwise.
 
-```{code-cell} ipython3
-AGN_URL = 'https://irsa.ipac.caltech.edu/data/demos/notebooks/euclid-agn/edfn_agn_candidates.fits'
-# The other two fields are in edfs_agn_candidates.fits and edff_agn_candidates.fits.
-# They have fewer selection methods (no DESI spectra and no SED fits), and their sources
-# have other photometric systems (20 in EDF-S, 20 and 50 in EDF-F): to use them, change PHOT_SYSTEM too.
+The small files are on Google Drive.
+We download the file of EDF-N to the directory of the notebook with `gdown`, and read it.
 
-agn = Table.read(AGN_URL)
+```{code-cell} ipython3
+# Google Drive file ID of the small file of each field.
+AGN_FILE_IDS = {
+    'edfn': '1rR4Brx08rfjik8EArScOuQoI4i5KnA_l',
+    'edfs': '1gpHBnn0sIw9__OLQHI2BYTGPvErzE2nH',
+    'edff': '1KSUfIco4i0ML4f1hs-YFzJ3U_i0sItiT',
+}
+# The other two fields have fewer selection methods (no DESI spectra and no SED fits), and their sources
+# have other photometric systems (20 in EDF-S, 20 and 50 in EDF-F): to use them, change PHOT_SYSTEM too.
+FIELD = 'edfn'
+
+agn_file = gdown.download(id=AGN_FILE_IDS[FIELD], output=f'{FIELD}_agn_candidates.fits')
+agn = Table.read(agn_file)
 print(f'{len(agn)} AGN candidates')
 ```
 
