@@ -110,14 +110,14 @@ One call fetches the images and the MER catalog, builds the VIS source
 models and measures the requested bands:
 
 ```python
-from pathlib import Path
 import euclid_phot as ep
 
 result = ep.run_forced_photometry(
     269.48, 67.30, 50.0,  # RA, Dec in degrees; box side in arcsec
     prior={"band": "VIS", "objects": "mer", "model_selection": "tree"},
     target_bands={"euclid": ("Y", "J", "H"), "wise": (), "irac": ()},
-    data_dir=Path("examples/native_data"), n_workers=4,
+    data_dir=ep.get_data_dir(),  # examples/data/<release>/, the download cache
+    n_workers=4,
 )
 catalog = result.to_table()
 catalog.write("photometry.csv", overwrite=True)

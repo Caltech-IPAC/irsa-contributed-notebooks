@@ -1,3 +1,8 @@
+# The notebooks are committed as .ipynb with their saved outputs; this
+# overrides the repository-wide '*.ipynb' ignore rule for this package.
+!notebooks/*.ipynb
+!notebooks/supporting_notebooks/*.ipynb
+
 # Downloaded inputs and generated catalogs
 examples/native_data/
 examples/data/
