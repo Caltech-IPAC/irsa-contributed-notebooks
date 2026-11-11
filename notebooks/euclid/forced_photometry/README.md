@@ -89,8 +89,8 @@ first code cell, for running a single notebook without this clone.
 
 Each notebook starts by choosing the Euclid release in its first cell.
 The default is the public Q1 release. Setting the selector to DR1 uses
-the Deep Survey release of DR1 instead, reachable only from the IPAC
-network until its public release on 12 November 2026. Those fields hold
+the Deep Survey release of DR1 instead, public at IRSA since
+12 November 2026. Those fields hold
 about twice as many sources, so the notebooks take longer, and IRSA does
 not yet serve the DR1 Sérsic shapes, so model selection there starts
 from exponential profiles. No survey data ship
