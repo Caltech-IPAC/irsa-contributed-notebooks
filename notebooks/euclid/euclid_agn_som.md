@@ -189,12 +189,6 @@ PHZ_COLUMNS = (['object_id', 'phz_median', 'phz_flags', 'photometric_system', 'f
                + [f'flux_{band}_unif' for band in BANDS])
 ```
 
-<!-- TODO: remove this cell when DR1 is public on the production IRSA services. -->
-
-```{code-cell} ipython3
-tap = pyvo.dal.TAPService('https://irsadev.ipac.caltech.edu/TAP')
-```
-
 To get the PHZ rows of our candidates, we select on their DR1 object IDs.
 The TAP service accepts at most 1000 values in a list, so we send one query per 1000 object IDs.
 
@@ -781,7 +775,7 @@ To go further, you can use the other two fields, a larger Hα sample (`N_HALPHA`
 
 ## About This Notebook
 
-**Last updated:** 10 November 2026
+**Last updated:** 11 November 2026
 
 This notebook was written and contributed by its authors.
 When last checked, it ran without error in an environment set up with the install instructions above.
