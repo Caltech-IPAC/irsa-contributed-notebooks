@@ -1,0 +1,35 @@
+# The notebooks are committed as .ipynb with their saved outputs; this
+# overrides the repository-wide '*.ipynb' ignore rule for this package.
+!notebooks/*.ipynb
+!notebooks/supporting_notebooks/*.ipynb
+
+# Downloaded inputs and generated catalogs
+examples/native_data/
+examples/data/
+examples/output/
+data/
+outputs/
+notebooks/*.ecsv
+notebooks/*.csv
+notebooks/supporting_notebooks/*.ecsv
+notebooks/supporting_notebooks/*.csv
+# Local environments, build products, and notebook scratch files
+.venv/
+venv/
+.anet/
+.unwise_psf/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+.DS_Store
+.pytest_cache/
+.ruff_cache/
+/photometry.csv
+/photometry.ecsv
+
+
+# Jupyter Book output
+_build/
