@@ -52,9 +52,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Caltech-IPAC/euclid-forced-photometry"
-Documentation = "https://github.com/Caltech-IPAC/euclid-forced-photometry#readme"
-Issues = "https://github.com/Caltech-IPAC/euclid-forced-photometry/issues"
+Homepage = "https://github.com/Caltech-IPAC/irsa-contributed-notebooks/tree/main/notebooks/euclid/forced_photometry"
+Documentation = "https://github.com/Caltech-IPAC/irsa-contributed-notebooks/tree/main/notebooks/euclid/forced_photometry#readme"
+Issues = "https://github.com/Caltech-IPAC/irsa-contributed-notebooks/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
