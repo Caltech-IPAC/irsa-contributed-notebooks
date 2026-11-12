@@ -11,3 +11,15 @@ project:
       children:
         # - title: {Short title that will appear in the site navigation side bar.}
         #   file: {path/to/notebook.md}
+        - title: Forced Photometry
+          file: notebooks/euclid/forced_photometry/README.md
+          children:
+            - file: notebooks/euclid/forced_photometry/notebooks/00_how_tractor_works.ipynb
+            - file: notebooks/euclid/forced_photometry/notebooks/01_nisp_forced_photometry.ipynb
+            - file: notebooks/euclid/forced_photometry/notebooks/02_wise_forced_photometry.ipynb
+            - file: notebooks/euclid/forced_photometry/notebooks/03_irac_forced_photometry.ipynb
+            - file: notebooks/euclid/forced_photometry/notebooks/04_ground_based_forced_photometry.ipynb
+            - file: notebooks/euclid/forced_photometry/notebooks/05_one_call.ipynb
+            - file: notebooks/euclid/forced_photometry/notebooks/06_photometry_at_coordinates.ipynb
+            - file: notebooks/euclid/forced_photometry/notebooks/supporting_notebooks/model_selection.ipynb
+            - file: notebooks/euclid/forced_photometry/notebooks/supporting_notebooks/injection_recovery.ipynb
