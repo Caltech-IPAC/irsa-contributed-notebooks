@@ -1,3 +1,8 @@
+---
+site:
+  hide_outline: true
+---
+
 # IRSA Contributed Python Notebooks
 
 These Python Jupyter notebooks demonstrate science use cases of data served by [Caltech/IPAC-IRSA](https://irsa.ipac.caltech.edu) (IRSA).
