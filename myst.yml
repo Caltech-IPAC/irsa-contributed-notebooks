@@ -32,7 +32,7 @@ extends:
 site:
   template: book-theme
   nav:
-    - title: IRSA Tutorials
+    - title: IRSA Notebooks
       url: https://caltech-ipac.github.io/irsa-tutorials/
       open_in_same_tab: true
     - title: Contributed Notebooks
