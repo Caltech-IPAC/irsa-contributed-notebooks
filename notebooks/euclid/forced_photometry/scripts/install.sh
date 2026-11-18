@@ -4,7 +4,8 @@
 #
 # `pip install -e .` already pulls in every PyPI dependency (they are declared
 # in pyproject.toml). This script additionally installs the three packages the
-# README installs by hand, because none of them is a plain `pip install`:
+# euclid-forced-photometry.md installs by hand, because none of them is pure
+# Python and easily installable by pip:
 #
 #   1. Tractor          — needs `pip install --no-build-isolation` with numpy +
 #                         cython already present (its setup.py imports numpy at

@@ -1,3 +1,4 @@
+(euclid-forced-photometry)=
 # Euclid forced photometry
 
 This package is provided by the Euclid NASA Science Center at IPAC
@@ -59,6 +60,7 @@ still be checked on each science sample before the measurements are used.
 Start with 00 to learn the fitting model, 01 to inspect the full workflow,
 or 05 for a short working example.
 
+(euclid-forced-photometry-install)=
 ## Install and run
 
 The install script installs into the active virtualenv or conda environment,
@@ -200,6 +202,7 @@ that rendering and recovery agree with each other; it says nothing about
 the real PSF, galaxy morphology, detection completeness or the uncertainty
 terms listed above. The notebook states what it does and does not cover.
 
+(euclid-forced-photometry-cost)=
 ## Computing cost
 
 Forced photometry on Euclid data at the scale of these notebooks does not
@@ -298,6 +301,7 @@ effective PRF) and `ground_based/` (a user's image, its WCS and PSF checks).
 Notebooks 01-04 run the recipe step by step for one band before calling the
 band's one-line fit.
 
+(euclid-forced-photometry-references)=
 ## References
 
 The image modelling uses [The Tractor](https://github.com/dstndstn/tractor)
