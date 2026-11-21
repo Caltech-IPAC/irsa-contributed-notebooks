@@ -14,7 +14,7 @@ project:
         - title: AGN Selections on a Color SOM
           file: notebooks/euclid/euclid_agn_som.md
         - title: Forced Photometry
-          file: notebooks/euclid/forced_photometry/README.md
+          file: notebooks/euclid/forced_photometry/euclid-forced-photometry.md
           children:
             - file: notebooks/euclid/forced_photometry/notebooks/00_how_tractor_works.ipynb
             - file: notebooks/euclid/forced_photometry/notebooks/01_nisp_forced_photometry.ipynb

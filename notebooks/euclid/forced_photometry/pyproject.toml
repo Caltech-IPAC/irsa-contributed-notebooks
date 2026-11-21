@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "euclid_phot"
 version = "0.5.0"
 description = "Educational workflows for Euclid Q1/DR1 VIS/NISP, unWISE, Spitzer/IRAC and ground-based forced photometry with Tractor."
-readme = "README.md"
+readme = "euclid-forced-photometry.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
